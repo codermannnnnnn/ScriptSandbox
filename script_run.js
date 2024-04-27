@@ -6,11 +6,11 @@ function updateHtml() {
 function runJs() {
   var result = "";
   try {
-    result = eval(document.getElementById("js"));
+    result = eval(document.getElementById("js").value);
   } catch (error) {
     result = `${error.name}: ${error.message}`;
   };
-  (document.getElementsByTagName("iframe")[1].id=="html_iframe"?document.getElementsByTagName("iframe")[0]:document.getElementsByTagName("iframe")[1]).contentWindow.location.reload();
+  (document.getElementsByTagName("iframe")[1].id=="html_iframe"?document.getElementsByTagName("iframe")[0]:document.getElementsByTagName("iframe")[1]).contentDocument.body.innerHTML="";
   (document.getElementsByTagName("iframe")[1].id=="html_iframe"?document.getElementsByTagName("iframe")[0]:document.getElementsByTagName("iframe")[1]).contentDocument.body.innerHTML+="Output: ";
   (document.getElementsByTagName("iframe")[1].id=="html_iframe"?document.getElementsByTagName("iframe")[0]:document.getElementsByTagName("iframe")[1]).contentDocument.body.innerHTML+=result;
 }
