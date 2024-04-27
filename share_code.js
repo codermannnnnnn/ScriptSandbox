@@ -14,6 +14,3 @@ function sharedCodeSet() {
   p.split(":").forEach((element,index)=>{if(index==0){type=atob(unescape(atob(element)))}else{code=atob(unescape(atob(element)))}});
   document.getElementFromId(type).value = code;
 };
-
-export shareCodeLink;
-export sharedCodeSet;
