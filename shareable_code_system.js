@@ -12,5 +12,5 @@ function sharedCodeSet() {
   p = location.href.replace("https://codermannnnnnn.github.io/ScriptSandbox/#codecrypt-","");
   var type, code;
   p.split(":").forEach((element,index)=>{if(index==0){type=atob(unescape(atob(element)))}else{code=atob(unescape(atob(element)))}});
-  document.getElementsFromTagName("input");
+  document.getElementFromId(type).value = code;
 }
