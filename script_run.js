@@ -1,5 +1,5 @@
 function updateHtml() {
-  (document.getElementsByTagName("iframe")[0].id=="js_output_iframe"?document.getElementsByTagName("iframe")[1]:document.getElementsByTagName("iframe")[0]).contentWindow.location.reload();
+  (document.getElementsByTagName("iframe")[0].id=="js_output_iframe"?document.getElementsByTagName("iframe")[1]:document.getElementsByTagName("iframe")[0]).contentDocument.body.innerHTML="";
   (document.getElementsByTagName("iframe")[0].id=="js_output_iframe"?document.getElementsByTagName("iframe")[1]:document.getElementsByTagName("iframe")[0]).contentDocument.body.innerHTML+=document.getElementById("html").value;
 }
 
