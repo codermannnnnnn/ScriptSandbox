@@ -14,5 +14,3 @@ function runJs() {
   (document.getElementsByTagName("iframe")[1].id=="html_iframe"?document.getElementsByTagName("iframe")[0]:document.getElementsByTagName("iframe")[1]).contentDocument.body.innerHTML+="Output: ";
   (document.getElementsByTagName("iframe")[1].id=="html_iframe"?document.getElementsByTagName("iframe")[0]:document.getElementsByTagName("iframe")[1]).contentDocument.body.innerHTML+=result;
 }
-export default updateHtml;
-export default runJs;
