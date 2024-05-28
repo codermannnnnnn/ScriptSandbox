@@ -5,6 +5,9 @@
     <link rel="stylesheet" href="https://raw.githubusercontent.com/codermannnnnnn/ScriptSandbox/main/style.css">
   </head>
   <body>
+    <!-- LICENSE OF THE CODERMAN -->
+    <!-- This code can be used if credited and has changes or just credited for archive. -->
+    <!-- Credit: codermannnnnnn -->
     <script src="script_mechanics.js"></script>
     <iframe id="html_iframe"></iframe>
     <iframe id="js_output_iframe"></iframe>
@@ -12,6 +15,11 @@
     <input id="js" placeholder="// your js code here">
     <button onclick="updateHtml()">Show HTML</button>
     <button onclick="runJs()">Run JS</button>
+    <button onclick="shareCodeLink('html', document.getElementFromId('html').value, false)">Copy HTML link</button>
+    <button onclick="shareCodeLink('html', document.getElementFromId('js').value, false)">Copy JS link</button>
+    <button onclick="shareCodeLink('html', document.getElementFromId('html').value, true)">Copy HTML link with autorun</button>
+    <button onclick="shareCodeLink('html', document.getElementFromId('js').value, true)">Copy JS link with autorun</button>
+    
     <p>This site is open-source.</p>
     <p>Source code is <a href="https://github.com/codermannnnnnn/ScriptSandbox">here</a>.</p>
     <p>Report any bugs, enhancements, etc. on there.</p>
